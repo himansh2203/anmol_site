@@ -1,0 +1,43 @@
+.signup-page {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  background-image: url("../assets/ayurvedic_image.jpg");
+  background-size: cover; /* Ensure the background image covers the entire area */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background from repeating */
+  padding: 20px; /* Add padding for spacing */
+}
+
+.signup-card {
+  width: 90%; /* Make the card responsive */
+  max-width: 600px; /* Constrain the card's maximum width */
+  max-height: 80vh; /* Set a maximum height for the card */
+  padding: 20px; /* Add padding for content */
+  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhance the shadow for better visibility */
+  overflow-y: auto; /* Enable vertical scrolling inside the card */
+}
+
+.signup-card::-webkit-scrollbar {
+  width: 8px; /* Set scrollbar width */
+}
+
+.signup-card::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded scrollbar thumb */
+}
+
+.signup-card::-webkit-scrollbar-track {
+  background-color: #f9f9f9; /* Scrollbar track color */
+}
+
+@media (max-width: 768px) {
+  .signup-card {
+    max-width: 90%; /* Adjust the card width for smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+}

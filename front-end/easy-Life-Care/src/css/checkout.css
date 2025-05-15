@@ -1,0 +1,62 @@
+.card-header {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Page Container */
+.checkout-page {
+  min-height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f9f9f9; /* Light background color */
+  padding: 2px;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Checkout Container */
+.checkout-container {
+  width: 100%;
+  max-width: 1600px; /* Constrain the width */
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+/* Card Body */
+.card-body {
+  padding: 20px;
+  max-height: 70vh; /* Limit the height of the card */
+  overflow-y: auto; /* Enable scrolling inside the card */
+}
+
+/* Section Headers */
+.text-primary {
+  color: #007bff;
+}
+
+.text-success {
+  color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 15px;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+}

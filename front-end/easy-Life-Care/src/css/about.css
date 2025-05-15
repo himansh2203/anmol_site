@@ -1,0 +1,41 @@
+/* Outer container styling */
+.about-container {
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling for the entire page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Optional background color */
+}
+
+/* Inner scrollable container styling */
+.about-content {
+  height: 90%; /* Scrollable container height */
+  width: 100%; /* Optional width */
+  overflow-y: auto; /* Enable vertical scrolling within this container */
+  padding: 2px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Optional background for the content */
+  border-radius: 10px; /* Optional rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better appearance */
+}
+
+/* Main heading styling */
+.about-content h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Subheading styling */
+.about-content h2 {
+  text-align: center;
+  color: #16a085;
+  margin-top: 30px;
+}
+
+/* Paragraph styling */
+.about-content p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}

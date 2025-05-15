@@ -1,0 +1,48 @@
+/* General container styling */
+.terms-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column; /* Stack the heading and content vertically */
+  justify-content: flex-start; /* Align items to the top */
+  align-items: center; /* Center horizontally */
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  padding-top: 20px; /* Add spacing at the top */
+}
+
+/* Header styling */
+.terms-header {
+  text-align: center; /* Center the text */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the header spans the full width */
+}
+
+/* Content container */
+.terms-content {
+  height: 80%; /* Scrollable container height */
+  width: 100%; /* Optional width */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+.terms-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #16a085;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.terms-content p {
+  margin-bottom: 15px;
+  text-align: justify;
+  line-height: 1.6;
+}

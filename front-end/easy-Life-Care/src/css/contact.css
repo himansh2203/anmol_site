@@ -1,0 +1,61 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top */
+  height: 100vh; /* Full viewport height */
+  background-color: #f9f9f9;
+  overflow-y: auto; /* Enable vertical scrolling for the entire container */
+  padding: 5px; /* Add padding for better spacing */
+}
+
+.contact-content {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1200px;
+  max-height: 100vh; /* Limit the height to make it scrollable */
+  overflow-y: auto; /* Enable vertical scrolling for the content */
+}
+
+.contact-content h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.contact-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-item .icon {
+  font-size: 1.5rem;
+  color: #16a085;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #16a085;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}

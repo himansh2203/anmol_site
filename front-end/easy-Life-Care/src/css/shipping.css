@@ -1,9 +1,9 @@
 .shipping-container {
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Use min-height for flexible full-page layout */
   display: flex;
-  flex-direction: column; /* Stack the header and content vertically */
-  justify-content: flex-start; /* Align items to the top */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 5px;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -18,9 +18,9 @@
 }
 
 .shipping-content {
+  min-width: 1400px; 
   width: 100%;
-  max-height: 80vh; /* Limit height to make it scrollable */
-  overflow-y: auto; /* Enable vertical scrolling */
+  height: auto; /* Let content define height */
   padding: 5px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -54,7 +54,6 @@
   }
   .shipping-content {
     width: 98%;
-    max-height: none;
     padding: 6px;
     border-radius: 6px;
     font-size: 0.95rem;
@@ -77,7 +76,6 @@
   }
   .shipping-content {
     width: 95%;
-    max-height: none;
     padding: 12px;
     border-radius: 8px;
     font-size: 1.05rem;
@@ -91,7 +89,6 @@
 /* Desktops (above 900px) */
 @media (min-width: 901px) {
   .shipping-container {
-    height: 100vh;
     padding: 5px;
   }
   .shipping-header {
@@ -100,7 +97,6 @@
   }
   .shipping-content {
     width: 70%;
-    max-height: 80vh;
     padding: 20px;
     border-radius: 10px;
     font-size: 1rem;

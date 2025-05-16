@@ -1,30 +1,29 @@
 /* General container styling */
 .terms-container {
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Use min-height for flexible layout */
   display: flex;
-  flex-direction: column; /* Stack the heading and content vertically */
-  justify-content: flex-start; /* Align items to the top */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
-  padding-top: 20px; /* Add spacing at the top */
+  padding-top: 20px;
 }
 
 /* Header styling */
 .terms-header {
-  text-align: center; /* Center the text */
+  text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
   color: #2c3e50;
   margin-bottom: 20px;
-  width: 100%; /* Ensure the header spans the full width */
+  width: 100%;
 }
 
 /* Content container */
 .terms-content {
-  height: 80%; /* Scrollable container height */
-  width: 100%; /* Optional width */
-  overflow-y: auto; /* Enable vertical scrolling */
+  min-width: 1400px;
+  width: 100%;
   padding: 5px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -59,7 +58,6 @@
   }
   .terms-content {
     width: 98%;
-    height: auto;
     padding: 6px;
     border-radius: 6px;
     font-size: 0.95rem;
@@ -83,7 +81,6 @@
   }
   .terms-content {
     width: 95%;
-    height: auto;
     padding: 12px;
     border-radius: 8px;
     font-size: 1.05rem;
@@ -98,7 +95,7 @@
 /* Desktops (above 900px) */
 @media (min-width: 901px) {
   .terms-container {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 20px;
   }
   .terms-header {
@@ -107,7 +104,6 @@
   }
   .terms-content {
     width: 70%;
-    height: 80%;
     padding: 20px;
     border-radius: 10px;
     font-size: 1rem;

@@ -1,11 +1,16 @@
 package com.example.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.example.dto.LoginRequest;
 import com.example.entity.User;
 import com.example.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/login")
@@ -18,7 +23,7 @@ public class LoginController {
     @PostMapping
     public ResponseEntity<String> loginUser(@RequestBody LoginRequest loginRequest) {
         // Find user by email
-        User user = userRepository.findByEmail(loginRequest.getEmail());
+        User user = userRepository.findByPhone(loginRequest.getPhone());
 
         if (user == null) {
             return ResponseEntity.status(404).body("User not found");

@@ -1,14 +1,16 @@
+/* Container */
 .shipping-container {
-  min-height: 100vh; /* Use min-height for flexible full-page layout */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 5px;
-  font-family: Arial, sans-serif;
   background-color: #f9f9f9;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
+/* Header */
 .shipping-header {
   text-align: center;
   font-size: 2.5rem;
@@ -17,11 +19,11 @@
   margin-bottom: 20px;
 }
 
+/* Content */
 .shipping-content {
-  min-width: 1400px; 
   width: 100%;
-  height: auto; /* Let content define height */
-  padding: 5px;
+  max-width: 1200px;
+  padding: 20px;
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,6 +32,7 @@
   color: #555;
 }
 
+/* Subheadings */
 .shipping-content h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -37,72 +40,57 @@
   margin-top: 20px;
 }
 
+/* Paragraphs */
 .shipping-content p {
   margin-bottom: 15px;
   text-align: justify;
 }
 
-/* Mobile devices (up to 600px) */
+/* Mobile (≤600px) */
 @media (max-width: 600px) {
   .shipping-container {
-    height: auto;
-    padding: 4px;
+    padding: 10px;
+    align-items: flex-start;
   }
+
   .shipping-header {
     font-size: 1.3rem;
     margin-bottom: 10px;
   }
+
   .shipping-content {
     width: 98%;
-    padding: 6px;
-    border-radius: 6px;
+    padding: 10px;
     font-size: 0.95rem;
+    border-radius: 6px;
   }
+
   .shipping-content h2 {
     font-size: 1.1rem;
     margin-top: 10px;
   }
 }
 
-/* Tablets (601px to 900px) */
+/* Tablets (601px–900px) */
 @media (min-width: 601px) and (max-width: 900px) {
   .shipping-container {
-    height: auto;
-    padding: 10px;
+    padding: 20px;
   }
+
   .shipping-header {
     font-size: 1.8rem;
     margin-bottom: 15px;
   }
+
   .shipping-content {
-    width: 95%;
-    padding: 12px;
-    border-radius: 8px;
+    width: 90%;
+    padding: 16px;
     font-size: 1.05rem;
+    border-radius: 8px;
   }
+
   .shipping-content h2 {
     font-size: 1.3rem;
     margin-top: 15px;
-  }
-}
-
-/* Desktops (above 900px) */
-@media (min-width: 901px) {
-  .shipping-container {
-    padding: 5px;
-  }
-  .shipping-header {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  .shipping-content {
-    width: 70%;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 1rem;
-  }
-  .shipping-content h2 {
-    font-size: 1.5rem;
-    margin-top: 20px;
   }
 }

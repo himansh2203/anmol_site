@@ -46,3 +46,75 @@
   text-align: justify;
   line-height: 1.6;
 }
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .terms-container {
+    height: auto;
+    padding-top: 8px;
+  }
+  .terms-header {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .terms-content {
+    width: 98%;
+    height: auto;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  .terms-content h2 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
+}
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .terms-container {
+    height: auto;
+    padding-top: 14px;
+  }
+  .terms-header {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .terms-content {
+    width: 95%;
+    height: auto;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+  }
+  .terms-content h2 {
+    font-size: 1.3rem;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Desktops (above 900px) */
+@media (min-width: 901px) {
+  .terms-container {
+    height: 100vh;
+    padding-top: 20px;
+  }
+  .terms-header {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .terms-content {
+    width: 70%;
+    height: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .terms-content h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

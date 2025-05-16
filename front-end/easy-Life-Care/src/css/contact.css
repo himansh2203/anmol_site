@@ -59,3 +59,75 @@
 .contact-item a:hover {
   text-decoration: underline;
 }
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .contact-container {
+    height: auto;
+    padding: 4px;
+  }
+  .contact-content {
+    padding: 6px;
+    border-radius: 6px;
+    max-width: 98%;
+    max-height: none;
+  }
+  .contact-content h1 {
+    font-size: 1.2rem;
+  }
+  .contact-content p,
+  .contact-item {
+    font-size: 0.95rem;
+  }
+  .contact-item .icon {
+    font-size: 1.2rem;
+  }
+}
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .contact-container {
+    height: auto;
+    padding: 10px;
+  }
+  .contact-content {
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 95%;
+    max-height: none;
+  }
+  .contact-content h1 {
+    font-size: 1.5rem;
+  }
+  .contact-content p,
+  .contact-item {
+    font-size: 1.05rem;
+  }
+  .contact-item .icon {
+    font-size: 1.3rem;
+  }
+}
+
+/* Desktops (above 900px) */
+@media (min-width: 901px) {
+  .contact-container {
+    height: 100vh;
+    padding: 5px;
+  }
+  .contact-content {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    max-height: 100vh;
+  }
+  .contact-content h1 {
+    font-size: 2rem;
+  }
+  .contact-content p,
+  .contact-item {
+    font-size: 1rem;
+  }
+  .contact-item .icon {
+    font-size: 1.5rem;
+  }
+}

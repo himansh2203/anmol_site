@@ -41,3 +41,72 @@
   margin-bottom: 15px;
   text-align: justify;
 }
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .shipping-container {
+    height: auto;
+    padding: 4px;
+  }
+  .shipping-header {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .shipping-content {
+    width: 98%;
+    max-height: none;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  .shipping-content h2 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+}
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .shipping-container {
+    height: auto;
+    padding: 10px;
+  }
+  .shipping-header {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .shipping-content {
+    width: 95%;
+    max-height: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+  }
+  .shipping-content h2 {
+    font-size: 1.3rem;
+    margin-top: 15px;
+  }
+}
+
+/* Desktops (above 900px) */
+@media (min-width: 901px) {
+  .shipping-container {
+    height: 100vh;
+    padding: 5px;
+  }
+  .shipping-header {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .shipping-content {
+    width: 70%;
+    max-height: 80vh;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  .shipping-content h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+}

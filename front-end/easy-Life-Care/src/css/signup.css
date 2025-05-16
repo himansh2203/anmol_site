@@ -35,9 +35,42 @@
   background-color: #f9f9f9; /* Scrollbar track color */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+  .signup-page {
+    min-height: auto;
+    padding: 8px;
+    align-items: flex-start;
+  }
   .signup-card {
-    max-width: 90%; /* Adjust the card width for smaller screens */
-    padding: 15px; /* Reduce padding for smaller screens */
+    max-width: 98%;
+    padding: 8px;
+    border-radius: 6px;
+    max-height: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .signup-page {
+    min-height: auto;
+    padding: 14px;
+  }
+  .signup-card {
+    max-width: 95%;
+    padding: 14px;
+    border-radius: 8px;
+    max-height: 90vh;
+  }
+}
+
+@media (min-width: 901px) {
+  .signup-page {
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .signup-card {
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 80vh;
   }
 }

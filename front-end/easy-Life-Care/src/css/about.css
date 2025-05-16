@@ -1,8 +1,7 @@
 /* Outer container styling */
 .about-container {
-  height: 100vh; /* Full viewport height */
   display: flex;
-  flex-direction: column; /* Stack children vertically */
+  flex-direction: column;  
   justify-content: center;
   align-items: center;
   background-color: #f9f9f9; /* Optional background color */
@@ -11,8 +10,9 @@
 /* Inner scrollable container styling */
 .about-content {
   height: 100%; /* Scrollable container height */
+  width: 100%; /* Optional width */
   overflow-y: auto; /* Enable vertical scrolling within this container */
-  padding: 2px;
+  padding: 20px;
   font-family: Arial, sans-serif;
   background-color: #ffffff; /* Optional background for the content */
   border-radius: 10px; /* Optional rounded corners */
@@ -37,65 +37,4 @@
 .about-content p {
   line-height: 1.6;
   margin-bottom: 15px;
-}
-
-/* Mobile devices (up to 600px) */
-@media (max-width: 600px) {
-  .about-container {
-    height: auto;
-    padding: 10px 0;
-    align-items: flex-start;
-  }
-  .about-content {
-    width: 98%;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 6px;
-  }
-  .about-content h1 {
-    font-size: 1.3rem;
-  }
-  .about-content h2 {
-    font-size: 1.1rem;
-  }
-}
-
-/* Tablets (601px to 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
-  .about-container {
-    height: auto;
-    padding: 20px 0;
-  }
-  .about-content {
-    width: 90%;
-    padding: 20px;
-    font-size: 1.1rem;
-    border-radius: 8px;
-  }
-  .about-content h1 {
-    font-size: 1.7rem;
-  }
-  .about-content h2 {
-    font-size: 1.3rem;
-  }
-}
-
-/* Desktops (above 900px) */
-@media (min-width: 901px) {
-  .about-container {
-    height: 100vh;
-    padding: 0;
-  }
-  .about-content {
-    width: 70%;
-    padding: 32px;
-    font-size: 1.2rem;
-    border-radius: 10px;
-  }
-  .about-content h1 {
-    font-size: 2rem;
-  }
-  .about-content h2 {
-    font-size: 1.5rem;
-  }
 }

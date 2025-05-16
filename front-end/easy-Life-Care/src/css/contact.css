@@ -3,10 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; /* Align content to the top */
-  height: 100vh; /* Full viewport height */
   background-color: #f9f9f9;
-  overflow-y: auto; /* Enable vertical scrolling for the entire container */
-  padding: 5px; /* Add padding for better spacing */
 }
 
 .contact-content {
@@ -15,9 +12,8 @@
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 1200px;
-  max-height: 100vh; /* Limit the height to make it scrollable */
+  height: 100%; /* Scrollable container height */
+  width: 100%; /* Optional width */
   overflow-y: auto; /* Enable vertical scrolling for the content */
 }
 

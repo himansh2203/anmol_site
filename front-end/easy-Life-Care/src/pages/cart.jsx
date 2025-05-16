@@ -2,6 +2,8 @@ import React from "react";
 import { useCart } from "../context/CartContext";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../css/cart.css";
+import Bottom from "../components/bottom";
+import Foot from "../components/foot";
 
 const Cart = () => {
   const { cartItems, removeFromCart, updateCartItemQuantity } = useCart();
@@ -119,6 +121,8 @@ const Cart = () => {
           </div>
         </div>
       </div>
+      <Bottom />
+      <Foot />
     </div>
   );
 };

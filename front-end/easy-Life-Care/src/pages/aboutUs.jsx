@@ -1,22 +1,8 @@
-import React, { useEffect } from "react";
-import "../css/about.css"; // Import the CSS file
-import { useLocation } from "react-router-dom"; // Import useLocation from react-router-dom
+import "../css/about.css"; // Import the CSS filert useLocation from react-router-dom
 import Bottom from "../components/bottom"; // Import the Bottom component
 import Foot from "../components/foot"; // Import the Foot component
 
 function AboutUs() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/aboutUs") {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    };
-  }, [location.pathname]);
-
   return (
     <div className="about-container">
       <div className="about-content">
@@ -147,9 +133,9 @@ function AboutUs() {
           body, and spirit is what drives us, and we look forward to serving
           you.
         </p>
-        <Bottom />
-        <Foot />
       </div>
+      <Bottom />
+      <Foot />
     </div>
   );
 }

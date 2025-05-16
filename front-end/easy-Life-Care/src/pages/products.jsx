@@ -1,7 +1,7 @@
 // filepath: [products.jsx](http://_vscodecontentref_/1)
 import "../css/products.css";
-import { useState, useEffect } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Bottom from "../components/bottom";
 import Foot from "../components/foot";
 import { useCart } from "../context/CartContext";
@@ -250,22 +250,11 @@ const productsData = [
 ];
 
 function Product() {
-  const location = useLocation();
   const { addToCart } = useCart();
   const navigate = useNavigate();
 
   const [products, setProducts] = useState(productsData);
   const [sortOrder, setSortOrder] = useState("");
-
-  useEffect(() => {
-    if (location.pathname === "/products") {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    };
-  }, [location.pathname]);
 
   const handleSort = (order) => {
     const sortedProducts = [...products];

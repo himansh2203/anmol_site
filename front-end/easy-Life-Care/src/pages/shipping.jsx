@@ -1,22 +1,8 @@
 import "../css/shipping.css";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import Bottom from "../components/bottom";
 import Foot from "../components/foot";
 
 function Shipping() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/shipping") {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    };
-  }, [location.pathname]);
-
   return (
     <div className="shipping-container">
       <h1 className="shipping-header">Shipping Policy</h1>
@@ -73,9 +59,9 @@ function Shipping() {
           If you have any questions about our shipping policies, please don't
           hesitate to contact us. We're here to help!
         </p>
-        <Bottom />
-        <Foot />
       </div>
+      <Bottom />
+      <Foot />
     </div>
   );
 }

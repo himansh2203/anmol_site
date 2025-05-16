@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom"; // Import useNavigate
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../css/login.css"; // Your custom styling
 import { Form, Button, Card } from "react-bootstrap";
+import Bottom from "../components/bottom";
+import Foot from "../components/foot";
 
 function Login() {
-  const location = useLocation();
   const navigate = useNavigate(); // Initialize useNavigate
 
   const [formData, setFormData] = useState({
@@ -13,16 +14,6 @@ function Login() {
   });
 
   const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    if (location.pathname === "/login") {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    };
-  }, [location.pathname]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

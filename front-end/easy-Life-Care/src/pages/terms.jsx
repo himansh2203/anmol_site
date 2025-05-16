@@ -1,22 +1,8 @@
-import React, { useEffect } from "react";
 import "../css/terms.css"; // Import the CSS file
-import { useLocation } from "react-router-dom"; // Import useLocation
 import Bottom from "../components/bottom"; // Import the Bottom component
 import Foot from "../components/foot"; // Import the Foot component
 
 function Terms() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/terms") {
-      document.body.style.overflow = "hidden"; // Disable scrolling for the body
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Re-enable scrolling for the body
-    };
-  }, [location.pathname]);
-
   return (
     <div className="terms-container">
       <h1 className="terms-header">Terms and Conditions</h1>
@@ -137,9 +123,9 @@ function Terms() {
           arising from or related to these terms and conditions or your use of
           this website.
         </p>
-        <Bottom />
-        <Foot />
       </div>
+      <Bottom />
+      <Foot />
     </div>
   );
 }

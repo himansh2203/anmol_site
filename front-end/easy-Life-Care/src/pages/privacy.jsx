@@ -1,21 +1,7 @@
 import "../css/privacy.css";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 import Bottom from "../components/bottom";
 import Foot from "../components/foot";
 function Privacy() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/privacy") {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    };
-  }, [location.pathname]);
-
   return (
     <div className="privacy-container">
       <h1 className="privacy-header">Privacy Policy</h1>
@@ -138,9 +124,9 @@ function Privacy() {
           If you have any questions about this Privacy Policy, please contact
           us.
         </p>
-        <Bottom />
-        <Foot />
       </div>
+      <Bottom />
+      <Foot />
     </div>
   );
 }

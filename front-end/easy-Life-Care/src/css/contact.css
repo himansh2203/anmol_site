@@ -1,7 +1,8 @@
 .contact-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Align content to the top */
+  align-items: center; /* Align content to the top */
   height: 100vh; /* Full viewport height */
   background-color: #f9f9f9;
   overflow-y: auto; /* Enable vertical scrolling for the entire container */

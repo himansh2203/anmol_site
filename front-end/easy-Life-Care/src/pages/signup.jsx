@@ -1,11 +1,8 @@
 import "../css/signup.css";
-import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import React, { useState } from "react";
 import { Form, Button, Card } from "react-bootstrap";
 
 function Signup() {
-  const location = useLocation();
-
   // State to manage form data
   const [formData, setFormData] = useState({
     name: "",
@@ -17,16 +14,6 @@ function Signup() {
 
   // State to manage success or error messages
   const [message, setMessage] = useState("");
-
-  useEffect(() => {
-    if (location.pathname === "/signup") {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    };
-  }, [location.pathname]);
 
   // Handle form input changes
   const handleChange = (e) => {

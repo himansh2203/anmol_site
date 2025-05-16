@@ -1,5 +1,3 @@
-import { useLocation } from "react-router-dom";
-import React, { useEffect } from "react";
 import "../css/contact.css"; // Import the CSS file
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook } from "@fortawesome/free-brands-svg-icons"; // Social media icons
@@ -9,20 +7,10 @@ import {
   faEnvelope,
   faUser,
 } from "@fortawesome/free-solid-svg-icons"; // Other icons
+import Bottom from "../components/bottom"; // Import the Bottom component
+import Foot from "../components/foot"; // Import the Foot component
 
 function ContactUs() {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/contactUs") {
-      document.body.style.overflow = "hidden"; // Disable scrolling
-    }
-
-    return () => {
-      document.body.style.overflow = "auto"; // Re-enable scrolling
-    };
-  }, [location.pathname]);
-
   return (
     <div className="contact-container">
       <div className="contact-content">
@@ -87,6 +75,8 @@ function ContactUs() {
           ></iframe>
         </div>
       </div>
+      <Bottom />
+      <Foot />
     </div>
   );
 }

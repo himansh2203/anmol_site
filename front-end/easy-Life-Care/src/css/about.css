@@ -1,8 +1,8 @@
 /* Outer container styling */
 .about-container {
   height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevent scrolling for the entire page */
   display: flex;
+  flex-direction: column; /* Stack children vertically */
   justify-content: center;
   align-items: center;
   background-color: #f9f9f9; /* Optional background color */
@@ -10,8 +10,7 @@
 
 /* Inner scrollable container styling */
 .about-content {
-  height: 90%; /* Scrollable container height */
-  width: 100%; /* Optional width */
+  height: 100%; /* Scrollable container height */
   overflow-y: auto; /* Enable vertical scrolling within this container */
   padding: 2px;
   font-family: Arial, sans-serif;

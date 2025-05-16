@@ -40,5 +40,13 @@
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5",
     "vite": "^6.2.0"
-  }
+  },
+  "description": "React frontend for Easy Life project",
+  "main": "src/index.js",
+  "keywords": [
+    "react",
+    "frontend"
+  ],
+  "author": "himanshu",
+  "license": "MIT"
 }

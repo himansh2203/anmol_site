@@ -8,7 +8,7 @@ function Login() {
   const navigate = useNavigate(); // Initialize useNavigate
 
   const [formData, setFormData] = useState({
-    email: "",
+    phone: "",
     password: "",
   });
 
@@ -61,15 +61,17 @@ function Login() {
           <h2 className="text-center mb-4">Login</h2>
           {message && <p className="text-danger text-center">{message}</p>}
           <Form onSubmit={handleSubmit}>
-            <Form.Group controlId="formEmail" className="mb-3">
-              <Form.Label>Email:</Form.Label>
+            <Form.Group controlId="formPhone" className="mb-3">
+              <Form.Label>Mobile Number:</Form.Label>
               <Form.Control
-                type="email"
-                name="email"
-                placeholder="Enter email"
-                value={formData.email}
+                type="tel"
+                name="phone"
+                placeholder="Enter mobile number"
+                value={formData.phone}
                 onChange={handleChange}
                 required
+                pattern="[0-9]{10}"
+                maxLength={10}
               />
             </Form.Group>
 

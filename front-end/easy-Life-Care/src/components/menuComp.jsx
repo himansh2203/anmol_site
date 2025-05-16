@@ -13,11 +13,12 @@ function CollapsibleExample() {
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand
-          href="/easy-Life-Care"
+          as={Link}
+          to="/"
           style={{ height: "70px", marginRight: "10px" }}
         >
           <img
-            src="./public/logo.ico"
+            src="./logo.ico"
             alt="Easy Life Care Logo"
             style={{ height: "70px", marginRight: "10px" }} // Adjust height and spacing as needed
           />

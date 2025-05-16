@@ -1,6 +1,6 @@
 // ProductList.jsx
 import React from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "./productCard";
 import { Container, Row, Col } from "react-bootstrap";
 import img1 from "../assets/ayur.jpg";
 

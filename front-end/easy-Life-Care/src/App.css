@@ -36,13 +36,15 @@ body {
   justify-content: center;
   padding: 0.5rem 20rem;
   font-size: 2rem;
+  font-weight: bold;
 }
 .elc1-2{
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem 20rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 .elc2{
@@ -67,4 +69,43 @@ body {
 .bottom_3_1{
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+/* Example responsive styles */
+.elc1, .elc2 {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+
+.elc1-1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.elc1-2 {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .elc1, .elc2 {
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .elc1-1 {
+    font-size: 1.2rem;
+  }
+  .elc1-2 {
+    font-size: 0.9rem;
+  }
+  .product-list, .review-slider, .bottom, .foot {
+    padding: 5px;
+  }
+}
+
+/* Make images and cards responsive */
+img, .card, .product-list {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }

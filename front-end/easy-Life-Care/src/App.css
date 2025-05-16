@@ -36,15 +36,13 @@ body {
   justify-content: center;
   padding: 0.5rem 20rem;
   font-size: 2rem;
-  font-weight: bold;
 }
 .elc1-2{
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0.5rem 20rem;
-  font-size: 1rem;
-  margin-top: 10px;
+  font-size: 1.1rem;
 }
 
 .elc2{
@@ -71,41 +69,83 @@ body {
   font-weight: 600;
 }
 
-/* Example responsive styles */
-.elc1, .elc2 {
-  padding: 20px;
-  font-size: 1.2rem;
-}
-
-.elc1-1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.elc1-2 {
-  font-size: 1rem;
-  margin-top: 10px;
-}
-
-@media (max-width: 768px) {
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
   .elc1, .elc2 {
-    padding: 10px;
+    padding: 8px;
+    font-size: 0.95rem;
+  }
+  .elc1-1, .elc1-2 {
+    padding: 0.5rem 0.5rem;
     font-size: 1rem;
   }
   .elc1-1 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-  .elc1-2 {
-    font-size: 0.9rem;
+  .elc2 {
+    padding: 1rem 0.5rem;
+    font-size: 0.95rem;
   }
-  .product-list, .review-slider, .bottom, .foot {
-    padding: 5px;
+  .bottom {
+    flex-direction: column;
+    padding: 1rem 0.5rem;
+    font-size: 0.95rem;
+    gap: 1rem;
+  }
+  .bottom_3_1 {
+    font-size: 1.1rem;
+  }
+  .backImage {
+    padding: 4rem 0.5rem;
+    background-position: center;
   }
 }
 
-/* Make images and cards responsive */
-img, .card, .product-list {
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .elc1, .elc2 {
+    padding: 1rem 2rem;
+    font-size: 1.05rem;
+  }
+  .elc1-1, .elc1-2 {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
+  .elc1-1 {
+    font-size: 1.3rem;
+  }
+  .elc2 {
+    padding: 2rem 2rem;
+    font-size: 1.05rem;
+  }
+  .bottom {
+    padding: 2rem 2rem;
+    font-size: 1.05rem;
+  }
+  .backImage {
+    padding: 8rem 2rem;
+  }
+}
+
+/* Desktops (above 900px) */
+@media (min-width: 901px) {
+  .elc1, .elc2 {
+    padding: 2rem 7rem;
+    font-size: 1.2rem;
+  }
+  .elc1-1, .elc1-2 {
+    padding: 0.5rem 20rem;
+    font-size: 2rem;
+  }
+  .elc2 {
+    padding: 3rem 7rem;
+    font-size: 1.1rem;
+  }
+  .bottom {
+    padding: 3rem 7rem;
+    font-size: 1.1rem;
+  }
+  .backImage {
+    padding: 20rem;
+  }
 }

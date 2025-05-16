@@ -5,6 +5,11 @@
   color: white;
   font-size: 1rem;
   box-sizing: border-box;
+
+  width: 98.5vw;     /* Force it to take full viewport width */
+  margin: 0;        /* Remove default margin */
+  position: relative;
+  left: 0;
 }
 
 /* Mobile devices (up to 600px) */

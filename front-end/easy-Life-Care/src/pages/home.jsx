@@ -1,4 +1,3 @@
-import React from "react";
 import Slideshow from "../components/imageSlider.jsx";
 import ProductList from "../components/productList.jsx";
 import Bottom from "../components/bottom.jsx";

@@ -7,6 +7,10 @@
   font-family: Arial, sans-serif;
   color: #333;
   box-sizing: border-box;
+  width: 98.5vw;     /* Force it to take full viewport width */
+  margin: 0;        /* Remove default margin */
+  position: relative;
+  left: 0;
 }
 
 /* Logo */

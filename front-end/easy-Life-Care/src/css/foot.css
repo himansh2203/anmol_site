@@ -1,0 +1,32 @@
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+/* Mobile devices (up to 600px) */
+@media (max-width: 600px) {
+  .footer {
+    padding: 12px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablets (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .footer {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Desktops (above 900px) */
+@media (min-width: 901px) {
+  .footer {
+    padding: 20px;
+    font-size: 1rem;
+  }
+}

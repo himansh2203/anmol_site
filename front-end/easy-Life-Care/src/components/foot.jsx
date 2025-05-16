@@ -1,20 +1,10 @@
-import React from "react";
+import "../css/foot.css";
 
 function Foot() {
   return (
-    <div className="footer">
-      <footer
-        className="footer"
-        style={{
-          textAlign: "center",
-          padding: "20px",
-          backgroundColor: "black",
-          color: "white",
-        }}
-      >
-        Easy Life Care © 2021. All Rights Reserved
-      </footer>
-    </div>
+    <footer className="footer">
+      Easy Life Care © 2021. All Rights Reserved
+    </footer>
   );
 }
 

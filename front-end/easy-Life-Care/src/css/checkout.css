@@ -14,31 +14,31 @@
 
 /* Page Container */
 .checkout-page {
-  min-height: 100vh;
+  min-height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #f9f9f9; /* Light background color */
   padding: 2px;
-  /* Removed: overflow-y: auto; */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 /* Checkout Container */
 .checkout-container {
   width: 100%;
-  max-width: 1600px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  overflow: visible; /* Allow natural flow */
+  max-width: 1600px; /* Constrain the width */
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevent content overflow */
 }
 
 /* Card Body */
 .card-body {
   padding: 20px;
-  /* Removed: max-height: 70vh; */
-  /* Removed: overflow-y: auto; */
+  max-height: 70vh; /* Limit the height of the card */
+  overflow-y: auto; /* Enable scrolling inside the card */
 }
 
 /* Section Headers */
@@ -66,22 +66,18 @@
   .checkout-page {
     padding: 4px;
   }
-
   .checkout-container {
     max-width: 98%;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     padding: 6px;
   }
-
   .card-header {
     font-size: 1rem;
   }
-
   .card-body {
     padding: 8px;
-    max-height: none; /* Not needed but kept for clarity */
-    overflow: visible;
+    max-height: none;
   }
 }
 
@@ -90,22 +86,18 @@
   .checkout-page {
     padding: 10px;
   }
-
   .checkout-container {
     max-width: 95%;
     border-radius: 8px;
     box-shadow: 0 3px 12px rgba(0,0,0,0.09);
     padding: 12px;
   }
-
   .card-header {
     font-size: 1.1rem;
   }
-
   .card-body {
     padding: 14px;
-    max-height: none;
-    overflow: visible;
+    max-height: 60vh;
   }
 }
 
@@ -114,21 +106,17 @@
   .checkout-page {
     padding: 2px;
   }
-
   .checkout-container {
     max-width: 1600px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     padding: 0;
   }
-
   .card-header {
     font-size: 1.25rem;
   }
-
   .card-body {
     padding: 20px;
-    max-height: none;
-    overflow: visible;
+    max-height: 70vh;
   }
 }

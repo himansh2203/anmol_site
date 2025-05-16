@@ -48,7 +48,7 @@ function AboutUs() {
           Established on 20th June 2019, Easy Life Care Shopping Ltd is a
           publicly incorporated, non-government company based in Delhi with
           offices across major cities in India Our founder,{" "}
-          <strong> Mr. Anmol Roy</strong> , had a vision to create a company
+          <strong> Mr. Anmol Kumar</strong> , had a vision to create a company
           that would provide authentic Ayurvedic products and alternative
           medicine to people all over India . His passion for Ayurveda and its
           ability to heal the mind, body, and spirit led him to establish Easy

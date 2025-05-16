@@ -36,11 +36,11 @@ function ContactUs() {
           </div>
           <div className="contact-item">
             <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
-            <span>123 Easy Life Care Street, Delhi, India</span>
+            <span>M-Block,Cannaught Place, Delhi, India , 110001</span>
           </div>
           <div className="contact-item">
             <FontAwesomeIcon icon={faPhone} className="icon" />
-            <span>+91 9876543210</span>
+            <span>+91 8076250586</span>
           </div>
           <div className="contact-item">
             <FontAwesomeIcon icon={faEnvelope} className="icon" />
@@ -77,7 +77,7 @@ function ContactUs() {
         <div className="map-container">
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8398397398!2d77.06889999999999!3d28.527280000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dff2f2f2f2f%3A0x2f2f2f2f2f2f2f2f!2sDelhi%2C%20India!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112131.02808134654!2d77.2197711!3d28.6326347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd3726fdcbff%3A0x1e3a869be3756341!2sBlock%20M%2C%20Connaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1715866617031!5m2!1sen!2sin"
             width="100%"
             height="250"
             style={{ border: 0 }}

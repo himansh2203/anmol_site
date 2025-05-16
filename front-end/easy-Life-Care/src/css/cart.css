@@ -3,12 +3,12 @@
   height: 100vh; /* Full viewport height */
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Prevent body scrolling */
+  overflow: visible; /* Prevent body scrolling */
 }
 
 .cart-content {
   flex: 1;
-  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-y: visible; /* Enable vertical scrolling */
   padding: 20px;
   scrollbar-width: thin; /* For modern browsers */
   scrollbar-color: #ccc #f9f9f9; /* Custom scrollbar colors */
@@ -35,9 +35,9 @@
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-  max-height: 400px; /* Set a fixed height for the cart items section */
-  overflow-y: auto; /* Enable vertical scrolling */
-  padding-right: 10px; /* Add padding for scrollbar spacing */
+  max-height: none; /* Set a fixed height for the cart items section */
+  overflow-y: visible; /* Enable vertical scrolling */
+  padding-right: 0; /* Add padding for scrollbar spacing */
   scrollbar-width: thin; /* For modern browsers */
   scrollbar-color: #ccc #f9f9f9; /* Custom scrollbar colors */
 }
@@ -297,7 +297,6 @@ h2 {
     font-size: 0.95rem;
   }
   .cart-items {
-    max-height: 180px;
     padding-right: 0;
     gap: 10px;
   }
@@ -338,7 +337,6 @@ h2 {
     font-size: 1.05rem;
   }
   .cart-items {
-    max-height: 250px;
     gap: 15px;
   }
   .cart-item {
@@ -371,7 +369,6 @@ h2 {
     font-size: 1.2rem;
   }
   .cart-items {
-    max-height: 400px;
     gap: 20px;
   }
   .cart-item {

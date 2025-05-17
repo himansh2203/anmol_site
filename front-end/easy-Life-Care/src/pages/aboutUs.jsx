@@ -31,7 +31,7 @@ function AboutUs() {
 
         <h2>Our History</h2>
         <p>
-          Established on 20th June 2019, Easy Life Care Shopping Ltd is a
+          Established on 20th June 2021, Easy Life Care Shopping Ltd is a
           publicly incorporated, non-government company based in Delhi with
           offices across major cities in India Our founder,{" "}
           <strong> Mr. Anmol Kumar</strong> , had a vision to create a company

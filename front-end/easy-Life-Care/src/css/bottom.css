@@ -68,7 +68,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .bottom {
-    flex-direction: column; /* Stack vertically on small screens */
+    flex-direction: row; /* Stack vertically on small screens */
     align-items: center;
     padding: 10px;
     text-align: center;

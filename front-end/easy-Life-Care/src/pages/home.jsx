@@ -3,6 +3,7 @@ import ProductList from "../components/productList.jsx";
 import Bottom from "../components/bottom.jsx";
 import ReviewSlider from "../components/customerReview.jsx";
 import Foot from "../components/foot.jsx";
+import FAQ from "../components/faq.jsx";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
         medicinal properties.
       </div>
       <ReviewSlider />
+      <FAQ />
       <Bottom />
       <Foot />
     </>

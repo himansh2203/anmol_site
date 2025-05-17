@@ -13,6 +13,7 @@ import Privacy from "./pages/privacy.jsx";
 import Shipping from "./pages/shipping.jsx";
 import Checkout from "./pages/checkout.jsx";
 import Home from "./pages/home.jsx";
+import FAQ from "./components/faq.jsx";
 
 function App() {
   return (

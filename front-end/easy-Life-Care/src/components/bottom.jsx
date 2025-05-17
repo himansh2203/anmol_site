@@ -6,7 +6,7 @@ function Bottom() {
   return (
     <div className="bottom">
       <Nav.Link href="/" className="bottom-logo">
-        <img src="logo.ico" alt="logo" width="150" height="150" />
+        <img src="logo.ico" alt="logo" />
       </Nav.Link>
 
       <div className="bottom-links">

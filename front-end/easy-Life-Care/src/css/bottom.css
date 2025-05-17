@@ -63,6 +63,7 @@
   .bottom-links {
     flex-direction: column;
     align-items: center;
+    font-size:0.7 ;
   }
 
   .bottom-about-title {
@@ -70,7 +71,11 @@
   }
 
   .bottom-about-text {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     padding: 0 10px;
+  }
+  .bottom-logo {
+    width: 60px;
+    height: 60px;
   }
 }

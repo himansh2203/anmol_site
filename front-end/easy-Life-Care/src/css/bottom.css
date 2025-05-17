@@ -62,6 +62,12 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+  }
   .bottom-links {
     flex-direction: column;
     align-items: center;
@@ -85,7 +91,7 @@
   color: #2c3e50;
   text-decoration: none;
   font-weight: 200;
-  font-size: 0.7rem;
+  font-size: 0.4rem;
   transition: color 0.3s;
 }
 

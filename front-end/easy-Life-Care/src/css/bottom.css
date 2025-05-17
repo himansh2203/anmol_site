@@ -66,11 +66,11 @@
   }
 
   .bottom-about-title {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   .bottom-about-text {
-    font-size: 0.95rem;
+    font-size: 0.5rem;
     padding: 0 10px;
   }
 }

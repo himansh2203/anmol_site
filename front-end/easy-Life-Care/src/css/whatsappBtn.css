@@ -25,3 +25,33 @@
   width: 30px;
   height: 30px;
 }
+
+/* ✅ Media Query: Small Tablets and Large Phones */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-float img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* ✅ Media Query: Small Mobile Devices */
+@media (max-width: 480px) {
+  .whatsapp-float {
+    width: 45px;
+    height: 45px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .whatsapp-float img {
+    width: 22px;
+    height: 22px;
+  }
+}

@@ -1,4 +1,4 @@
-import "../css/whatsappbtn.css";
+import "../css/whatsappBtn.css";
 const WhatsAppButton = () => {
   const phoneNumber = "918076250586"; // Replace with your actual WhatsApp number
 

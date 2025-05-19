@@ -4,6 +4,7 @@ import Bottom from "../components/bottom.jsx";
 import ReviewSlider from "../components/customerReview.jsx";
 import Foot from "../components/foot.jsx";
 import FAQ from "../components/faq.jsx";
+import WhatsAppBtn from "../components/whatsappbtn.jsx";
 
 function Home() {
   return (
@@ -24,6 +25,7 @@ function Home() {
         mountains across India renowned for their healing vegetations rich in
         medicinal properties.
       </div>
+      <WhatsAppBtn />
       <ReviewSlider />
       <FAQ />
       <Bottom />

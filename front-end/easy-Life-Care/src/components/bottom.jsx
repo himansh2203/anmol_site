@@ -1,35 +1,35 @@
-import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "../css/bottom.css"; // Importing the CSS file
 
 function Bottom() {
   return (
     <div className="bottom">
-      <Nav.Link to="/" className="bottom-logo">
+      <Link to="/" className="bottom-logo">
         <img src="logo.ico" alt="logo" />
-      </Nav.Link>
+      </Link>
 
       <div className="bottom-links">
-        <Nav.Link to="/" className="bottom-link">
+        <Link to="/" className="bottom-link">
           Home
-        </Nav.Link>
-        <Nav.Link to="/products" className="bottom-link">
+        </Link>
+        <Link to="/products" className="bottom-link">
           Products
-        </Nav.Link>
-        <Nav.Link to="/aboutUs" className="bottom-link">
+        </Link>
+        <Link to="/aboutUs" className="bottom-link">
           About Us
-        </Nav.Link>
-        <Nav.Link to="/contactUs" className="bottom-link">
+        </Link>
+        <Link to="/contactUs" className="bottom-link">
           Contact Us
-        </Nav.Link>
-        <Nav.Link to="/terms" className="bottom-link">
+        </Link>
+        <Link to="/terms" className="bottom-link">
           Terms & Conditions
-        </Nav.Link>
-        <Nav.Link to="/privacy" className="bottom-link">
+        </Link>
+        <Link to="/privacy" className="bottom-link">
           Privacy Policy
-        </Nav.Link>
-        <Nav.Link to="/shipping" className="bottom-link">
+        </Link>
+        <Link to="/shipping" className="bottom-link">
           Shipping Policy
-        </Nav.Link>
+        </Link>
       </div>
 
       <div className="bottom-about">

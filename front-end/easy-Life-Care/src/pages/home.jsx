@@ -5,6 +5,7 @@ import ReviewSlider from "../components/customerReview.jsx";
 import Foot from "../components/foot.jsx";
 import FAQ from "../components/faq.jsx";
 import WhatsAppBtn from "../components/whatsappbtn.jsx";
+import Certify from "../components/certify.jsx";
 
 function Home() {
   return (
@@ -26,6 +27,7 @@ function Home() {
         medicinal properties.
       </div>
       <WhatsAppBtn />
+      <Certify />
       <ReviewSlider />
       <FAQ />
       <Bottom />

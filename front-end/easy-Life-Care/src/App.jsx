@@ -32,6 +32,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
       </Router>
     </CartProvider>

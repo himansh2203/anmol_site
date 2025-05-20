@@ -6,30 +6,30 @@ import { Link } from "react-router-dom";
 function Bottom() {
   return (
     <div className="bottom">
-      <Nav.Link href="/" className="bottom-logo">
+      <Nav.Link to="/" className="bottom-logo">
         <img src="logo.ico" alt="logo" />
       </Nav.Link>
 
       <div className="bottom-links">
-        <Nav.Link href="/" className="bottom-link">
+        <Nav.Link to="/" className="bottom-link">
           Home
         </Nav.Link>
-        <Nav.Link href="/products" className="bottom-link">
+        <Nav.Link to="/products" className="bottom-link">
           Products
         </Nav.Link>
-        <Nav.Link href="/aboutUs" className="bottom-link">
+        <Nav.Link to="/aboutUs" className="bottom-link">
           About Us
         </Nav.Link>
-        <Nav.Link href="/contactUs" className="bottom-link">
+        <Nav.Link to="/contactUs" className="bottom-link">
           Contact Us
         </Nav.Link>
-        <Nav.Link href="/terms" className="bottom-link">
+        <Nav.Link to="/terms" className="bottom-link">
           Terms & Conditions
         </Nav.Link>
-        <Nav.Link href="/privacy" className="bottom-link">
+        <Nav.Link to="/privacy" className="bottom-link">
           Privacy Policy
         </Nav.Link>
-        <Nav.Link href="/shipping" className="bottom-link">
+        <Nav.Link to="/shipping" className="bottom-link">
           Shipping Policy
         </Nav.Link>
       </div>

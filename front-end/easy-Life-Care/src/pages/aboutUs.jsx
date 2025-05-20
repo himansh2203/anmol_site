@@ -1,6 +1,4 @@
 import "../css/about.css"; // Import the CSS filert useLocation from react-router-dom
-import Bottom from "../components/bottom"; // Import the Bottom component
-import Foot from "../components/foot"; // Import the Foot component
 
 function AboutUs() {
   return (
@@ -134,8 +132,6 @@ function AboutUs() {
           you.
         </p>
       </div>
-      <Bottom />
-      <Foot />
     </div>
   );
 }

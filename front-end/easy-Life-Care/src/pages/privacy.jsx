@@ -1,6 +1,4 @@
 import "../css/privacy.css";
-import Bottom from "../components/bottom";
-import Foot from "../components/foot";
 function Privacy() {
   return (
     <div className="privacy-container">
@@ -125,8 +123,6 @@ function Privacy() {
           us.
         </p>
       </div>
-      <Bottom />
-      <Foot />
     </div>
   );
 }

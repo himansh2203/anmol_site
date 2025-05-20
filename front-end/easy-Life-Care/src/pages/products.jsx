@@ -2,8 +2,6 @@
 import "../css/products.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Bottom from "../components/bottom";
-import Foot from "../components/foot";
 import { useCart } from "../context/CartContext";
 
 import ayurImage from "../assets/ayur.jpg";
@@ -328,8 +326,6 @@ function Product() {
           </div>
         ))}
       </div>
-      <Bottom />
-      <Foot />
     </div>
   );
 }

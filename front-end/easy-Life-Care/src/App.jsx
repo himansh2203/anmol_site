@@ -14,6 +14,9 @@ import Shipping from "./pages/shipping.jsx";
 import Checkout from "./pages/checkout.jsx";
 import Home from "./pages/home.jsx";
 import FAQ from "./components/faq.jsx";
+import WhatsAppButton from "./components/whatsappbtn.jsx";
+import Bottom from "./components/bottom.jsx";
+import Foot from "./components/foot.jsx";
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/faq" element={<FAQ />} />
         </Routes>
+        <WhatsAppButton />
+        <Bottom />
+        <Foot />
       </Router>
     </CartProvider>
   );

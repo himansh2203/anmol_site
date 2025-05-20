@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "../css/login.css"; // Your custom styling
 import { Form, Button, Card } from "react-bootstrap";
-import Bottom from "../components/bottom";
-import Foot from "../components/foot";
 
 function Login() {
   const navigate = useNavigate(); // Initialize useNavigate

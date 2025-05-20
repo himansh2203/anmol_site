@@ -7,8 +7,6 @@ import {
   faEnvelope,
   faUser,
 } from "@fortawesome/free-solid-svg-icons"; // Other icons
-import Bottom from "../components/bottom"; // Import the Bottom component
-import Foot from "../components/foot"; // Import the Foot component
 
 function ContactUs() {
   return (
@@ -75,8 +73,6 @@ function ContactUs() {
           ></iframe>
         </div>
       </div>
-      <Bottom />
-      <Foot />
     </div>
   );
 }

@@ -1,10 +1,9 @@
 import Slideshow from "../components/imageSlider.jsx";
 import ProductList from "../components/productList.jsx";
-import Bottom from "../components/bottom.jsx";
+
 import ReviewSlider from "../components/customerReview.jsx";
-import Foot from "../components/foot.jsx";
+
 import FAQ from "../components/faq.jsx";
-import WhatsAppBtn from "../components/whatsappbtn.jsx";
 import Certify from "../components/certify.jsx";
 
 function Home() {
@@ -26,12 +25,9 @@ function Home() {
         mountains across India renowned for their healing vegetations rich in
         medicinal properties.
       </div>
-      <WhatsAppBtn />
       <Certify />
       <ReviewSlider />
       <FAQ />
-      <Bottom />
-      <Foot />
     </>
   );
 }

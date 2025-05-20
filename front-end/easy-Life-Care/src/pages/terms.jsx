@@ -1,6 +1,4 @@
 import "../css/terms.css"; // Import the CSS file
-import Bottom from "../components/bottom"; // Import the Bottom component
-import Foot from "../components/foot"; // Import the Foot component
 
 function Terms() {
   return (
@@ -124,8 +122,6 @@ function Terms() {
           this website.
         </p>
       </div>
-      <Bottom />
-      <Foot />
     </div>
   );
 }

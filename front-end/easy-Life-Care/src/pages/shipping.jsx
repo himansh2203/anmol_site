@@ -1,6 +1,4 @@
 import "../css/shipping.css";
-import Bottom from "../components/bottom";
-import Foot from "../components/foot";
 
 function Shipping() {
   return (
@@ -60,8 +58,6 @@ function Shipping() {
           hesitate to contact us. We're here to help!
         </p>
       </div>
-      <Bottom />
-      <Foot />
     </div>
   );
 }

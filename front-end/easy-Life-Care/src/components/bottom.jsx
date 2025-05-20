@@ -1,7 +1,5 @@
-import React from "react";
 import { Nav } from "react-bootstrap";
 import "../css/bottom.css"; // Importing the CSS file
-import { Link } from "react-router-dom";
 
 function Bottom() {
   return (

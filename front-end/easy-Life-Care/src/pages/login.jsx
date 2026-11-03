@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
-import "../css/login.css"; // Your custom styling
+import { useNavigate, Link } from "react-router-dom"; // Import Link
+import "../css/login.css";
 import { Form, Button, Card } from "react-bootstrap";
 
 function Login() {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
     phone: "",
@@ -32,8 +32,8 @@ function Login() {
 
       if (response.ok) {
         const data = await response.text();
-        setMessage(""); // Clear any previous messages
-        navigate("/cart"); // Redirect to the cart page
+        setMessage("");
+        navigate("/cart");
       } else {
         const errorData = await response.text();
         setMessage(errorData || "Login failed");
@@ -76,9 +76,15 @@ function Login() {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="w-100">
+            <Button variant="primary" type="submit" className="w-100 mb-2">
               Login
             </Button>
+
+            <div className="text-center">
+              <Link to="/forgot-password" className="text-decoration-none">
+                Forgot Password?
+              </Link>
+            </div>
           </Form>
         </Card.Body>
       </Card>

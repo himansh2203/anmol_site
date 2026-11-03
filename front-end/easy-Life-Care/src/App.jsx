@@ -17,6 +17,9 @@ import FAQ from "./components/faq.jsx";
 import WhatsAppButton from "./components/whatsappbtn.jsx";
 import Bottom from "./components/bottom.jsx";
 import Foot from "./components/foot.jsx";
+import ForgotPassword from "./pages/forgotPassword.jsx";
+import Admin from "./adminPanel/admin.jsx";
+import UserPanel from "./userPanel/user.jsx";
 
 function App() {
   return (
@@ -36,6 +39,9 @@ function App() {
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/user" element={<UserPanel />} />
         </Routes>
         <WhatsAppButton />
         <Bottom />

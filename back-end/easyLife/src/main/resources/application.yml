@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: easyLife
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/easyLife?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: system@123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect

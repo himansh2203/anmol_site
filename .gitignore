@@ -134,3 +134,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Separate repos (client -> himansh2203/ELC_front, server -> himansh2203/ELC_back)
+/client/
+/server/
